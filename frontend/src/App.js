@@ -1,14 +1,14 @@
 import './App.css'
 import {Routes, Route } from 'react-router-dom';
 import Dashboard from './pages/Dashboard';
-import Cars from './components/Cars/Cars';
+import Cars from './components/Content/Cars/Cars';
 import ErrorNotFound from './pages/ErrorNotFound'
 import Login from './pages/Login';
 import Register from './pages/Register';
 import Index from './pages/Index';
-import Orders from './components/Orders/Orders';
-import Types from './components/Types/Types';
-import Users from './components/Users/Users';
+import Orders from './components/Content/Orders/Orders';
+import Types from './components/Content/Types/Types';
+import Users from './components/Content/Users/Users';
 
 function App() {
   return (
