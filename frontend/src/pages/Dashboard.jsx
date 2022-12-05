@@ -2,16 +2,11 @@ import MainDash from '../components/MainDash/MainDash';
 import RightSide from '../components/RigtSide/RightSide';
 import {useLocation } from 'react-router-dom';
 import Sidebar from '../components/Sidebar';
-<<<<<<< Updated upstream
 import Cars from '../components/Content/Cars/Cars';
 import Users from '../components/Content/Users/Users';
 import ErrorNotFound from './ErrorNotFound';
 import Types from '../components/Content/Types/Types';
 import Orders from '../components/Content/Orders/Orders';
-=======
-import {Routes, Route } from 'react-router-dom';
-
->>>>>>> Stashed changes
 
 function Dashboard() {
   const location = useLocation();
@@ -33,16 +28,10 @@ function Dashboard() {
     <div className="AppGlass">
     
     <Sidebar/>
-<<<<<<< Updated upstream
    {switche()}
     
    
     
-=======
-        <MainDash/>
-    <RightSide/>
-      
->>>>>>> Stashed changes
   </div>
   )
 }

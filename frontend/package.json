@@ -12,6 +12,7 @@
     "@testing-library/user-event": "^13.2.1",
     "apexcharts": "^3.35.0",
     "framer-motion": "^6.2.9",
+    "node-modules": "^1.0.1",
     "react": "^18.0.0",
     "react-apexcharts": "^1.4.0",
     "react-circular-progressbar": "^2.0.4",
