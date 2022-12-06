@@ -1,12 +1,10 @@
-import React from 'react'
+import React from "react";
 
-function Cars() {
-  return (
-    <div>
-        gffiezojdclds
-      
-    </div>
-  )
+export default function Cars() {
+    return (
+      <p className="text-3xl font-bold underline">
+      Hello world!
+    </p>
+        );
 }
 
-export default Cars
