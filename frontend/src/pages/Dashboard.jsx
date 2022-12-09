@@ -1,6 +1,6 @@
 import MainDash from '../components/MainDash/MainDash';
 import RightSide from '../components/RigtSide/RightSide';
-import {useLocation } from 'react-router-dom';
+import {useLocation} from 'react-router-dom';
 import Sidebar from '../components/Sidebar';
 import Cars from '../components/Content/Cars/Cars';
 import Users from '../components/Content/Users/Users';
@@ -9,6 +9,9 @@ import Types from '../components/Content/Types/Types';
 import Orders from '../components/Content/Orders/Orders';
 
 function Dashboard() {
+
+
+
   const location = useLocation();
   const switche=()=>{
     switch(location.pathname){
@@ -23,7 +26,7 @@ function Dashboard() {
         default: return <ErrorNotFound/>
     }
   }
-  console.log(location)
+ 
   return (
     <div className="AppGlass">
     

@@ -5,9 +5,13 @@ import { UilSignOutAlt } from "@iconscout/react-unicons";
 import { SidebarData } from "../Data/Data";
 import { UilBars } from "@iconscout/react-unicons";
 import { motion } from "framer-motion";
-import { Link } from 'react-router-dom';
-
+import { logout, reset } from '../features/auth/authSlice'
+import { Link, useNavigate } from 'react-router-dom'
+import { useSelector, useDispatch } from 'react-redux'
 const Sidebar = () => {
+  const navigate = useNavigate()
+  const dispatch = useDispatch()
+  const { user } = useSelector((state) => state.auth)
   const [selected, setSelected] = useState(0);
 
   const [expanded, setExpaned] = useState(true)
@@ -19,6 +23,11 @@ const Sidebar = () => {
     false:{
       left : '-60%'
     }
+  }
+  const onLogout = () => {
+    dispatch(logout())
+    dispatch(reset())
+    navigate('/login')
   }
   return (
     <>
@@ -46,21 +55,16 @@ const Sidebar = () => {
               key={index}
               onClick={() => setSelected(index)}
             >
-                  
-            
-             
               <item.icon />
-              
               <span>{item.heading}</span>
-             
-             
-              
             </Link>
           );
         })}
         {/* signoutIcon */}
         <div className="menuItem">
+        <button  onClick={onLogout}>
           <UilSignOutAlt />
+        </button>
         </div>
       </div>
     </motion.div>
