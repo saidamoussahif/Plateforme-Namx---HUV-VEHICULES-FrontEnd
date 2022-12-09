@@ -9,6 +9,7 @@ import Register from './pages/Register';
 import Orders from './components/Content/Orders/Orders';
 import Types from './components/Content/Types/Types';
 import Users from './components/Content/Users/Users';
+import ActivationPage from './components/nodemailer/ActivationPage';
 
 function App() {
   return (
@@ -26,6 +27,7 @@ function App() {
       </Route>
         <Route path="login"  element={<Login/>}/>
         <Route path="register"  element={<Register/>}/>
+        <Route path="verifyUser/:activationCode"  element={<ActivationPage/>}/>
         <Route path="*" element={<ErrorNotFound/>} />
        
       </Routes>

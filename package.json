@@ -1,0 +1,23 @@
+{
+  "name": "plateforme-namx---huv-vehicules-frontend",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node backend/server.js",
+    "server": "nodemon backend/server.js",
+    "client": "npm start --prefix frontend",
+    "dev": "concurrently \"npm run server\" \"npm run client\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/saidamoussahif/Plateforme-Namx---HUV-VEHICULES-FrontEnd.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/saidamoussahif/Plateforme-Namx---HUV-VEHICULES-FrontEnd/issues"
+  },
+  "homepage": "https://github.com/saidamoussahif/Plateforme-Namx---HUV-VEHICULES-FrontEnd#readme"
+}
