@@ -1,7 +1,9 @@
 import React from 'react'
 import TextField from '../TextField/TextField'
 import { Formik, Form } from 'formik';
-function Modal() {
+function Modal(array) {
+  console.log(array,'props in modal')
+  
     const formik = {
         initialValues: {fullname : ""}
     }
@@ -16,6 +18,11 @@ function Modal() {
     onSubmit  = {(values) =>{console.log(values,'rr')}}> 
     {formik => (
     <Form>
+    {/* {array.map((item)=>{
+  
+    <div key={item}>I am one Object in the Array {item}</div>
+  
+})} */}
     <TextField label='Full Name' name='fullname' type='text'/>
     </Form>)}
     </Formik>
