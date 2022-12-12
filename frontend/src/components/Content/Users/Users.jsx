@@ -8,7 +8,6 @@ import TableHead from "@mui/material/TableHead";
 import TableRow from "@mui/material/TableRow";
 import Modal from "../../Modal/Modal";
 import Paper from "@mui/material/Paper";
-// import "./Users.css";
 import { useNavigate } from "react-router-dom";
 import { useEffect } from "react";
 
@@ -51,6 +50,8 @@ function Users() {
       );
   };
   if (!usersList) return <div>No User found</div>;
+
+
 
   return (
     <div>
@@ -107,31 +108,17 @@ function Users() {
                     >
                       Edit
                     </button> */}
-                    <label
-                      htmlFor="my-modal-3"
-                      className="btn"
-                      onClick={changeState}
-                    >
-                      Update
-                    </label>
-                    {/* <button
+                    <button
                       style={{
                         background: "rgb(255,0,0) / 47%)",
                         color: "red",
                       }}
-                      // onClick={() => deleteCar(car.id)}
                       type="submit"
                       className="relative rounded-xl p-3 w-16 bg-red-200"
                     >
-                      Delete
-                    </button> */}{" "}
-                    <label
-                      htmlFor="my-modal-3"
-                      className="btn"
-                      onClick={changeState}
-                    >
-                      Delete
-                    </label>
+                      Confirm
+                    </button>
+                    
                   </TableCell>
                 </TableRow>
               ))}
