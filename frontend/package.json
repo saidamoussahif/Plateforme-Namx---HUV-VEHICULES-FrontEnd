@@ -14,6 +14,7 @@
     "@testing-library/user-event": "^13.2.1",
     "apexcharts": "^3.35.0",
     "axios": "^1.2.0",
+    "daisyui": "^2.42.1",
     "formik": "^2.2.9",
     "framer-motion": "^6.2.9",
     "node-modules": "^1.0.1",
