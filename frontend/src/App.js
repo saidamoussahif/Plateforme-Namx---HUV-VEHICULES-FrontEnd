@@ -5,10 +5,10 @@ import Dashboard from "./pages/admin/Dashboard";
 import Cars from "./components/Content/Cars/Cars";
 import ErrorNotFound from "./pages/ErrorNotFound";
 import Login from "./pages/admin/Login";
-import Register from "./pages/admin/Register";
 import Orders from "./components/Content/Orders/Orders";
 import Types from "./components/Content/Types/Types";
 import Users from "./components/Content/Users/Users";
+
 
 function App() {
   return (
@@ -23,7 +23,6 @@ function App() {
           </Route>
 
           <Route path="login" element={<Login />} />
-          <Route path="register" element={<Register />} />
           <Route path="*" element={<ErrorNotFound />} />
           {/* <Route path="/" element={<Home />} /> */}
         </Routes>

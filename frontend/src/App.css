@@ -17,9 +17,9 @@
   color: var(--white);
   background: linear-gradient(
     106.37deg,
-    white 29.63%,
-    #f6f6f6 51.55%,
-    #eaeaea 90.85%    
+    rgb(204, 204, 204) 29.63%,
+    #b7b7b7 51.55%,
+    #cdc2c2 90.85%    
   );
   height: 100vh;
   display: flex;
