@@ -9,7 +9,6 @@ import Types from '../../components/Content/Types/Types';
 import Orders from '../../components/Content/Orders/Orders';
 
 
-
 function Dashboard() {
 
 
