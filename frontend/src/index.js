@@ -20,6 +20,13 @@ const root = createRoot(container);
 
 root.render(
 <>
+<<<<<<< HEAD
+<BrowserRouter>
+    <Provider store={store}>
+      <App />
+     </Provider>
+   </BrowserRouter>
+=======
 
   <React.StrictMode>
     <BrowserRouter>
@@ -29,6 +36,7 @@ root.render(
     </BrowserRouter>
   </React.StrictMode>
 
+>>>>>>> 27d82d419e45b6bdbdaa6d0da40f2061578a9042
 </>
 
 
