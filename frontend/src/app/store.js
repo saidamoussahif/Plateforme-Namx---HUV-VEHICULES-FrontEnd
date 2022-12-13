@@ -15,4 +15,6 @@ export const store = configureStore({
     types : typesReducer,
   },
 })
+
+
 export default store
