@@ -114,7 +114,7 @@ function Users() {
                         color: "red",
                       }}
                       type="submit"
-                      className="relative rounded-xl p-3 w-16 bg-red-200"
+                      className="relative text-center rounded-xl p-3 w-16 bg-red-200"
                     >
                       Confirm
                     </button>
