@@ -1,5 +1,5 @@
 import "./App.css";
-import "./index.css";
+// import "./index.css";
 import { Routes, Route } from "react-router-dom";
 import Dashboard from "./pages/admin/Dashboard";
 import Cars from "./components/Content/Cars/Cars";
@@ -8,6 +8,7 @@ import Login from "./pages/admin/Login";
 import Orders from "./components/Content/Orders/Orders";
 import Types from "./components/Content/Types/Types";
 import Users from "./components/Content/Users/Users";
+import Home from "./pages/Home";
 
 
 function App() {
@@ -24,7 +25,7 @@ function App() {
 
           <Route path="login" element={<Login />} />
           <Route path="*" element={<ErrorNotFound />} />
-          {/* <Route path="/" element={<Home />} /> */}
+          <Route path="/" element={<Home />} />
         </Routes>
       </div>
     </>
