@@ -1,10 +1,10 @@
 import React from 'react'
 import { useState } from 'react'
 import Modal from '../../Modal/Modal'
-const openModal = ()=>{
-  console.log('r')
- return 
-}
+// const openModal = ()=>{
+//   console.log('r')
+//  return 
+// }
 function Users() {
   const [toggle,setToggle] = useState(false)
   const changeState = ()=>{

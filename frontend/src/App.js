@@ -10,6 +10,7 @@ import Orders from './components/Content/Orders/Orders';
 import Types from './components/Content/Types/Types';
 import Users from './components/Content/Users/Users';
 import ActivationPage from './components/nodemailer/ActivationPage';
+import Admin from './pages/admin/Login';
 
 function App() {
   return (
@@ -25,6 +26,10 @@ function App() {
         <Route path="types"  element={<Types/>}/>
         <Route path="users"  element={<Users/>}/>
       </Route>
+   
+        <Route path="/Admin/login" element={<Admin/>} />
+       
+    
         <Route path="login"  element={<Login/>}/>
         <Route path="register"  element={<Register/>}/>
         <Route path="verifyUser/:activationCode"  element={<ActivationPage/>}/>

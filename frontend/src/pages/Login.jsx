@@ -20,7 +20,7 @@ function Login() {
 
 
 
-  const { user, isLoading, isError, isSuccess, message } = useSelector(
+  const { user, isError, isSuccess, message } = useSelector(
     (state) => state.auth
   )
 
@@ -61,7 +61,7 @@ function Login() {
 		<div className="space-y-4">
       
       <TextField label='Email' name='email' type='email'/>
-      <TextField label='Password' name='password' type='password'/>
+      <TextField label='Password'  name='password' type='password'/>
 			<button className='btn btn-dark mt-3 ml-3' type='submit' value="Save without refresh">Login</button>
 		
     </div>
