@@ -46,7 +46,6 @@ function Login() {
       console.log(values,'rr')
       dispatch(login(values))
       }
-      
     }
   > 
   {formik => (
