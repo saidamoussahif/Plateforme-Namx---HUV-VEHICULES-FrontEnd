@@ -59,14 +59,14 @@ async function LoginUser(event) {
             />
           </div>
           <div>
-            <div className="flex justify-between mb-2">
+            <div className="flex  justify-between mb-2">
               <label htmlFor="password" className="text-sm">
                 Password
               </label>
               <a
                 rel="noopener noreferrer"
                 href="/"
-                className="text-xs hover:underline dark:text-gray-400"
+                className="text-xs text-slate-900 hover:underline dark:text-gray-400"
               >
                 Forgot password?
               </a>
@@ -77,7 +77,7 @@ async function LoginUser(event) {
               name="password"
               id="password"
               placeholder="*****"
-              className="w-full px-3 py-2 border rounded-md dark:border-white dark:bg-white dark:text-gray-100"
+              className="w-full px-3 text-slate-900 py-2 border rounded-md dark:border-white dark:bg-white dark:text-gray-100"
             />
           </div>
         </div>
