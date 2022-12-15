@@ -27,9 +27,9 @@ export default function Cars() {
   };
 
   useEffect(() => {
-    // dispatch(getCars());
+ 
     getCars();
-    // dispatch(reset());
+ 
     isset(token);
   });
   const getCars = () => {
@@ -38,14 +38,14 @@ export default function Cars() {
       .then(
         (result) => {
           setCars(result);
-          // console.log(result);
+          
         },
         (error) => {
           setCars(null);
         }
       );
   };
-  if (!carsList) return <div>No Trip found</div>;
+  if (!carsList) return <div>No Cars found</div>;
 
   // Delete Cars
 
@@ -92,7 +92,7 @@ export default function Cars() {
 
   return (
     <>
-      <div id="Table" className="relative top-1/4 left-24 p-8 rounded-md">
+      <div id="Table" className="relative top-1/4 left-24 w-14/12 rounded-md">
         <TableContainer
           component={Paper}
           style={{ boxShadow: "0px 13px 20px 0px #80808029" }}

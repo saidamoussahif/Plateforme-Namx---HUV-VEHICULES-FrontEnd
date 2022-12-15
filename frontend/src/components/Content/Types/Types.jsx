@@ -20,7 +20,7 @@ function Types() {
   console.log(ar)
   let array ;
   array?.push(ar)
-  console.log(array,'rrrr')
+ 
   return (
     <div>
             <label htmlFor="my-modal-3" className="btn" onClick={changeState}>Update</label>

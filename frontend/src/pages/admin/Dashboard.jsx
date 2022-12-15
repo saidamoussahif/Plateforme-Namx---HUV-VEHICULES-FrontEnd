@@ -8,7 +8,6 @@ import ErrorNotFound from '../ErrorNotFound';
 import Types from '../../components/Content/Types/Types';
 import Orders from '../../components/Content/Orders/Orders';
 
-
 function Dashboard() {
 
 
@@ -27,8 +26,7 @@ function Dashboard() {
         default: return <ErrorNotFound/>
     }
   }
-  // console.log(location)
- 
+  console.log(location)
   return (
     <div className="AppGlass">
     

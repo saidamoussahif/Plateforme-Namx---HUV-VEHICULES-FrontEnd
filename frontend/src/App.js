@@ -8,26 +8,36 @@ import Login from "./pages/admin/Login";
 import Orders from "./components/Content/Orders/Orders";
 import Types from "./components/Content/Types/Types";
 import Users from "./components/Content/Users/Users";
+import Admin from "./pages/admin/Login.jsx";
+
 import Home from "./pages/Home";
 
 
 function App() {
   return (
     <>
-      <div className="App">
-        <Routes>
-          <Route path="/dashboard" element={<Dashboard />}>
-            <Route path="cars" element={<Cars />} />
-            <Route path="orders" element={<Orders />} />
-            <Route path="types" element={<Types />} />
-            <Route path="users" element={<Users />} />
-          </Route>
-
-          <Route path="login" element={<Login />} />
-          <Route path="*" element={<ErrorNotFound />} />
-          <Route path="/" element={<Home />} />
-        </Routes>
-      </div>
+    
+    
+    <div className="App">
+    
+      <Routes>
+        <Route path='/dashboard' element={<Dashboard/>}>
+        <Route path="cars"  element={<Cars/>}/>
+        <Route path="orders"  element={<Orders/>}/>
+        <Route path="types"  element={<Types/>}/>
+        <Route path="users"  element={<Users/>}/>
+      </Route>
+   
+        <Route path="/Admin/login" element={<Admin/>} />
+       
+    
+        <Route path="login"  element={<Login/>}/>
+        {/* <Route path="register"  element={<Register/>}/> */}
+        {/* <Route path="verifyUser/:activationCode"  element={<ActivationPage/>}/> */}
+        <Route path="*" element={<ErrorNotFound/>} />
+       
+      </Routes>
+    </div>
     </>
   );
 }
