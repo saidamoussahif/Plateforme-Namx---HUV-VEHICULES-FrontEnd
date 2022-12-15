@@ -11,6 +11,7 @@ import Users from "./components/Content/Users/Users";
 import Admin from "./pages/admin/Login.jsx";
 
 
+
 function App() {
   return (
     <>
@@ -30,8 +31,8 @@ function App() {
        
     
         <Route path="login"  element={<Login/>}/>
-        <Route path="register"  element={<Register/>}/>
-        <Route path="verifyUser/:activationCode"  element={<ActivationPage/>}/>
+        {/* <Route path="register"  element={<Register/>}/> */}
+        {/* <Route path="verifyUser/:activationCode"  element={<ActivationPage/>}/> */}
         <Route path="*" element={<ErrorNotFound/>} />
        
       </Routes>
