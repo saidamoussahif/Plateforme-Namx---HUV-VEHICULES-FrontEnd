@@ -33,7 +33,7 @@ export default function Cars() {
     isset(token);
   });
   const getCars = () => {
-    fetch("http://localhost:8000/api/cars/")
+    fetch("http://localhost:8000/api/cars")
       .then((res) => res.json())
       .then(
         (result) => {
@@ -63,6 +63,32 @@ export default function Cars() {
   //       }
   //     );
   // };
+
+  const deleteCar = (_id) => {
+    const requestOptions = {
+      method: "DELETE",
+      headers: { "Content-Type": "application/json" },
+      // body: JSON.stringify({ title: "React POST Request Example" }),
+    };
+    fetch("http://localhost:8000/api/cars/" + _id, requestOptions)
+      .then(async (response) => {
+        const data = await response.json();
+        getCars();
+
+        // check for error response
+        if (!response.ok) {
+          // get error message from body or default to response status
+          const error = (data && data.message) || response.status;
+          return Promise.reject(error);
+        }
+
+        this.setState({ postId: data.id });
+      })
+      .catch((error) => {
+        this.setState({ errorMessage: error.toString() });
+        console.error("There was an error!", error);
+      });
+  };
 
   return (
     <>
@@ -112,7 +138,7 @@ export default function Cars() {
                         background: "rgb(255,0,0) / 47%)",
                         color: "red",
                       }}
-                      // onClick={() => deleteCar(car.id)}
+                      onClick={() => deleteCar(car._id)}
                       type="submit"
                       className="relative rounded-xl p-3 w-16 bg-red-200"
                     >

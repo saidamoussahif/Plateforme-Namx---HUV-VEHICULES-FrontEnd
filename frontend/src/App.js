@@ -1,5 +1,5 @@
 import "./App.css";
-import "./index.css";
+// import "./index.css";
 import { Routes, Route } from "react-router-dom";
 import Dashboard from "./pages/admin/Dashboard";
 import Cars from "./components/Content/Cars/Cars";
@@ -10,6 +10,7 @@ import Types from "./components/Content/Types/Types";
 import Users from "./components/Content/Users/Users";
 import Admin from "./pages/admin/Login.jsx";
 
+import Home from "./pages/Home";
 
 
 function App() {
