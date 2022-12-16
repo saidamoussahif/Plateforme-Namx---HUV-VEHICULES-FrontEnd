@@ -39,6 +39,24 @@ function Orders() {
   };
   if (!ordersList) return <div>No User found</div>;
 
+
+  // confirm orders
+
+  const confirmOrders = (Email) => {
+    const requestOptions = {
+      method: "PUT",
+      headers: { "Content-Type": "application/json" },
+    };
+    fetch("http://localhost:8000/api/Reservation/Confirmer/" + Email, requestOptions)
+      .then(async (response) => {
+        const data = await response.json();
+      })
+      alert('order confirmed !!')
+      .catch((error) => {
+        console.error("There was an error!", error);
+      });
+     
+    }
   return (
     <div>
       <div id="Table" className="relative top-1/4 left-24 p-8 rounded-md">
@@ -84,6 +102,8 @@ function Orders() {
                       }}
                       type="submit"
                       className="relative rounded-xl p-3 w-16 bg-red-200"
+                      onClick={() => confirmOrders(order.Email)}
+
                     >
                       Confirm
                     </button>
@@ -96,6 +116,6 @@ function Orders() {
       </div>
     </div>
   );
-}
 
+}
 export default Orders;

@@ -1,5 +1,5 @@
 import "./Sidebar.css"
-import Logo from "../imgs/logo.png";
+import logo from "../imgs/logo-namx.svg";
 import { UilSignOutAlt } from "@iconscout/react-unicons";
 import { SidebarData } from "../Data/Data";
 import { UilBars } from "@iconscout/react-unicons";
@@ -8,7 +8,7 @@ import { Link, useNavigate } from 'react-router-dom'
 import { useSelector, useDispatch } from 'react-redux'
 import { Logout, reset } from "../features/adminAuth/adminSlice";
 import { useState } from "react";
-import { useEffect } from "react";
+// import { useEffect } from "react";
 
 
 // const Sidebar = () => {
@@ -16,16 +16,12 @@ import { useEffect } from "react";
 //   const dispatch = useDispatch()
   // const admin = useSelector((state) => state.adminAuth);
 
-  
-
-
-
 const Sidebar = () => {
 
   const LogOut = () => {
     dispatch(Logout());
     dispatch(reset());
-    navigate("/login");
+    navigate("/admin/login");
   };
 
 
@@ -69,10 +65,7 @@ const Sidebar = () => {
     >
       {/* logo */}
       <div className="logo">
-        <img src={Logo} alt="logo" />
-        <span>
-          Sh<span>o</span>ps
-        </span>
+        <img src={logo} alt="logo" />
       </div>
 
      
