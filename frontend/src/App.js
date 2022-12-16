@@ -3,10 +3,10 @@ import "./App.css";
 import { Routes, Route } from "react-router-dom";
 import Dashboard from "./pages/admin/Dashboard";
 import Cars from "./components/Content/Cars/Cars";
-import ErrorNotFound from "./pages/ErrorNotFound";
+// import ErrorNotFound from "./pages/ErrorNotFound";
 import Login from "./pages/Login";
 import Orders from "./components/Content/Orders/Orders";
-import Types from "./components/Content/Types/Types";
+import Details from "./components/Content/Details/Details";
 import Users from "./components/Content/Users/Users";
 import Admin from "./pages/admin/Login.jsx";
 import Register from "./pages/Register";
@@ -15,22 +15,20 @@ import Register from "./pages/Register";
 
 function App() {
   return (
-    <>
-    
-    
+    <>    
     <div className="App">
       <Routes>
         <Route path='/dashboard' element={<Dashboard/>}>
         <Route path="cars"  element={<Cars/>}/>
         <Route path="orders"  element={<Orders/>}/>
-        <Route path="types"  element={<Types/>}/>
+        <Route path="details"  element={<Details/>}/>
         <Route path="users"  element={<Users/>}/>
       </Route>
         <Route path="/Admin/login" element={<Admin/>} />
         <Route path="/login"  element={<Login/>}/>
         <Route path="register"  element={<Register/>}/>
         {/* <Route path="verifyUser/:activationCode"  element={<ActivationPage/>}/> */}
-        <Route path="*" element={<ErrorNotFound/>} />
+        {/* <Route path="*" element={<ErrorNotFound/>} /> */}
        
       </Routes>
     </div>

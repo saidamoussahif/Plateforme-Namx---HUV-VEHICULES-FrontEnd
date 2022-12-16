@@ -1,8 +1,8 @@
 import axios from 'axios'
 
-const API_URL = 'http://localhost:8000/api/Type'
-// Get  types
-const getTypes = async (token) => {
+const API_URL = 'http://localhost:8000/api/detalles'
+// Get  details
+const getDetails = async (token) => {
     const config = {
       headers: {
         Authorization: `Bearer ${token}`,
@@ -15,8 +15,8 @@ const getTypes = async (token) => {
   }
   
 
-  const typesService = {
-    getTypes,
+  const DetailService = {
+    getDetails,
   }
   
-  export default typesService
+  export default DetailService

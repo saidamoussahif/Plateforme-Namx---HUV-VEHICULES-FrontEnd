@@ -5,7 +5,7 @@ import Sidebar from '../../components/Sidebar';
 import Cars from '../../components/Content/Cars/Cars';
 import Users from '../../components/Content/Users/Users';
 import ErrorNotFound from '../ErrorNotFound';
-import Types from '../../components/Content/Types/Types';
+import Details from '../../components/Content/Details/Details';
 import Orders from '../../components/Content/Orders/Orders';
 
 function Dashboard() {
@@ -20,7 +20,7 @@ function Dashboard() {
         <RightSide/>
         </>;
         case "/dashboard/users": return <><Users/></>;
-        case "/dashboard/types": return <><Types/></>;
+        case "/dashboard/details": return <><Details/></>;
         case "/dashboard/orders": return <><Orders/></>;
         case "/dashboard/cars": return <><Cars/></>;
         default: return <ErrorNotFound/>
