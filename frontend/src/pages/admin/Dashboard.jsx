@@ -26,7 +26,7 @@ function Dashboard() {
         default: return <ErrorNotFound/>
     }
   }
-  console.log(location)
+  // console.log(location)
   return (
     <div className="AppGlass">
     

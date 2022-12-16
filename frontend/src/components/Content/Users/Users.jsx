@@ -52,15 +52,13 @@ function Users() {
   if (!usersList) return <div>No User found</div>;
 
 
-
+ 
   return (
     <div>
       <label htmlFor="my-modal-3" className="btn" onClick={changeState}>
         Add
       </label>
-
       {toggle && <Modal />}
-
       <div id="Table" className="relative top-1/4 left-24 p-8 rounded-md">
         <TableContainer
           component={Paper}
@@ -91,7 +89,6 @@ function Users() {
                   <TableCell component="th" scope="user">
                     {user.email}
                   </TableCell>
-
                   <TableCell align="center">{user.address}</TableCell>
                   <TableCell align="center">{user.city}</TableCell>
                   <TableCell align="center">{user.state}</TableCell>
@@ -114,7 +111,7 @@ function Users() {
                         color: "red",
                       }}
                       type="submit"
-                      className="relative text-center rounded-xl p-3 w-16 bg-red-200"
+                      className="relative align-center rounded-xl p-3 w-16 bg-red-200"
                     >
                       Confirm
                     </button>

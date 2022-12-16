@@ -1,4 +1,4 @@
-import {useEffect, useState} from "react";
+import { useEffect, useState } from "react";
 // import { useDispatch, useSelector } from "react-redux";
 import { useNavigate } from "react-router-dom";
 import Table from "@mui/material/Table";
@@ -11,10 +11,7 @@ import Paper from "@mui/material/Paper";
 import "./Cars.css";
 // import { getCars, reset } from "../../../features/Cars/carSlice";
 
-
-
 export default function Cars() {
-
   // const dispatch = useDispatch();
   const navigate = useNavigate();
   const [carsList, setCars] = useState(null);
@@ -27,9 +24,8 @@ export default function Cars() {
   };
 
   useEffect(() => {
- 
     getCars();
- 
+
     isset(token);
   });
   const getCars = () => {
@@ -38,7 +34,6 @@ export default function Cars() {
       .then(
         (result) => {
           setCars(result);
-          
         },
         (error) => {
           setCars(null);
@@ -48,27 +43,10 @@ export default function Cars() {
   if (!carsList) return <div>No Cars found</div>;
 
   // Delete Cars
-
-  // const deleteCar = (id) => {
-  //   fetch("http://localhost:8000/api/cars/" + id, {
-  //     method: "DELETE",
-  //   })
-  //     .then((res) => res.json())
-  //     .then(
-  //       (result) => {
-  //         getCars();
-  //       },
-  //       (error) => {
-  //         console.log(error);
-  //       }
-  //     );
-  // };
-
   const deleteCar = (_id) => {
     const requestOptions = {
       method: "DELETE",
       headers: { "Content-Type": "application/json" },
-      // body: JSON.stringify({ title: "React POST Request Example" }),
     };
     fetch("http://localhost:8000/api/cars/" + _id, requestOptions)
       .then(async (response) => {

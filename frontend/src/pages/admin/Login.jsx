@@ -21,11 +21,12 @@ async function LoginUser(event) {
       }),
     });
     const content = await response.json();
-    console.log(content);
+    // console.log(content);
     if (content.token) {
       localStorage.setItem("token", content.token);
       navigate("/dashboard");
     }
+
 }
   return (
     <div
@@ -40,7 +41,7 @@ async function LoginUser(event) {
       </div>
       <form
         onSubmit={LoginUser}
-        novalidate=""
+        noValidate=""
         action=""
         className="space-y-12 ng-untouched ng-pristine ng-valid"
       >
