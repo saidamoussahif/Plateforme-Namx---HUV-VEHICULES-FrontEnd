@@ -10,27 +10,21 @@ import TextField from '../components/TextField/TextField';
 function Login() {
   const dispatch = useDispatch()
   const navigate = useNavigate()
-  const formik = {
+  const formik = { 
     initialValues: {
-    email : "frabhi93@gmail.com",
-    password : "123"
+    email : "user@gmail.com",
+    password : "1234"
     },
-    
   };
-
-
-
-  const { user, isLoading, isError, isSuccess, message } = useSelector(
+  const { user, isError, isSuccess, message } = useSelector(
     (state) => state.auth
   )
-
   useEffect(() => {
     if (isError) {
       console.log(message)
     }
-
     if (isSuccess || user) {
-      navigate('/dashboard')
+      navigate('/')
     }
 
     dispatch(reset())
@@ -38,15 +32,16 @@ function Login() {
 
   
 
+
+
   return (
     <Formik
     initialValues={formik.initialValues}
     validator={LoginrSchema}
     onSubmit  = {(values) =>{ 
-      console.log(values,'rr')
+      // console.log(values,'rr')
       dispatch(login(values))
       }
-      
     }
   > 
   {formik => (
@@ -61,13 +56,13 @@ function Login() {
 		<div className="space-y-4">
       
       <TextField label='Email' name='email' type='email'/>
-      <TextField label='Password' name='password' type='password'/>
+      <TextField label='Password'  name='password' type='password'/>
 			<button className='btn btn-dark mt-3 ml-3' type='submit' value="Save without refresh">Login</button>
 		
     </div>
 	</Form>
 </div>
-)}
+)} 
 </Formik>
   )
 }

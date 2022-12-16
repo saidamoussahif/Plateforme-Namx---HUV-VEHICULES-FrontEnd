@@ -31,7 +31,7 @@ export const SidebarData = [
   },
   {
     icon: UilUsersAlt,
-    heading: "User",
+    heading: "Users",
     link: "/dashboard/users"
   },
   {
@@ -42,8 +42,8 @@ export const SidebarData = [
   },
   {
     icon: UilChart,
-    heading: "Type",
-    link : "/dashboard/types"
+    heading: "Details",
+    link : "/dashboard/details"
   },
 ];
 

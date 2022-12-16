@@ -1,4 +1,4 @@
-import {useEffect, useState} from "react";
+import { useEffect, useState } from "react";
 // import { useDispatch, useSelector } from "react-redux";
 import { useNavigate } from "react-router-dom";
 import Table from "@mui/material/Table";
@@ -11,10 +11,7 @@ import Paper from "@mui/material/Paper";
 import "./Cars.css";
 // import { getCars, reset } from "../../../features/Cars/carSlice";
 
-
-
 export default function Cars() {
-
   // const dispatch = useDispatch();
   const navigate = useNavigate();
   const [carsList, setCars] = useState(null);
@@ -27,46 +24,53 @@ export default function Cars() {
   };
 
   useEffect(() => {
-    // dispatch(getCars());
     getCars();
-    // dispatch(reset());
+
     isset(token);
   });
   const getCars = () => {
-    fetch("http://localhost:8000/api/cars/")
+    fetch("http://localhost:8000/api/cars")
       .then((res) => res.json())
       .then(
         (result) => {
           setCars(result);
-          // console.log(result);
         },
         (error) => {
           setCars(null);
         }
       );
   };
-  if (!carsList) return <div>No Trip found</div>;
+  if (!carsList) return <div>No Cars found</div>;
 
   // Delete Cars
+  const deleteCar = (_id) => {
+    const requestOptions = {
+      method: "DELETE",
+      headers: { "Content-Type": "application/json" },
+    };
+    fetch("http://localhost:8000/api/cars/" + _id, requestOptions)
+      .then(async (response) => {
+        const data = await response.json();
+        getCars();
 
-  // const deleteCar = (id) => {
-  //   fetch("http://localhost:8000/api/cars/" + id, {
-  //     method: "DELETE",
-  //   })
-  //     .then((res) => res.json())
-  //     .then(
-  //       (result) => {
-  //         getCars();
-  //       },
-  //       (error) => {
-  //         console.log(error);
-  //       }
-  //     );
-  // };
+        // check for error response
+        if (!response.ok) {
+          // get error message from body or default to response status
+          const error = (data && data.message) || response.status;
+          return Promise.reject(error);
+        }
+
+        this.setState({ postId: data.id });
+      })
+      .catch((error) => {
+        this.setState({ errorMessage: error.toString() });
+        console.error("There was an error!", error);
+      });
+  };
 
   return (
     <>
-      <div id="Table" className="relative top-1/4 left-24 p-8 rounded-md">
+      <div id="Table" className="relative top-1/4 left-24 w-14/12 rounded-md">
         <TableContainer
           component={Paper}
           style={{ boxShadow: "0px 13px 20px 0px #80808029" }}
@@ -112,7 +116,7 @@ export default function Cars() {
                         background: "rgb(255,0,0) / 47%)",
                         color: "red",
                       }}
-                      // onClick={() => deleteCar(car.id)}
+                      onClick={() => deleteCar(car._id)}
                       type="submit"
                       className="relative rounded-xl p-3 w-16 bg-red-200"
                     >

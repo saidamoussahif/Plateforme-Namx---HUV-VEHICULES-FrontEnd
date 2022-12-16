@@ -21,11 +21,12 @@ async function LoginUser(event) {
       }),
     });
     const content = await response.json();
-    console.log(content);
+    // console.log(content);
     if (content.token) {
       localStorage.setItem("token", content.token);
       navigate("/dashboard");
     }
+
 }
   return (
     <div
@@ -40,7 +41,7 @@ async function LoginUser(event) {
       </div>
       <form
         onSubmit={LoginUser}
-        novalidate=""
+        noValidate=""
         action=""
         className="space-y-12 ng-untouched ng-pristine ng-valid"
       >
@@ -59,14 +60,14 @@ async function LoginUser(event) {
             />
           </div>
           <div>
-            <div className="flex justify-between mb-2">
+            <div className="flex  justify-between mb-2">
               <label htmlFor="password" className="text-sm">
                 Password
               </label>
               <a
                 rel="noopener noreferrer"
                 href="/"
-                className="text-xs hover:underline dark:text-gray-400"
+                className="text-xs text-slate-900 hover:underline dark:text-gray-400"
               >
                 Forgot password?
               </a>
@@ -77,7 +78,7 @@ async function LoginUser(event) {
               name="password"
               id="password"
               placeholder="*****"
-              className="w-full px-3 py-2 border rounded-md dark:border-white dark:bg-white dark:text-gray-100"
+              className="w-full px-3 text-slate-900 py-2 border rounded-md dark:border-white dark:bg-white dark:text-gray-100"
             />
           </div>
         </div>
