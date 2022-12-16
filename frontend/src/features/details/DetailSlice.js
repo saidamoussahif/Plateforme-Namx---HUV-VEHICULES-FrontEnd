@@ -1,9 +1,9 @@
 import { createSlice, createAsyncThunk } from '@reduxjs/toolkit'
-import typesService from './typesService'
+import DetailService from './DetailService'
 
 
 const initialState = {
-    types: [],
+    Details: [],
     isError: false,
     isSuccess: false,
     isLoading: false,
@@ -11,13 +11,13 @@ const initialState = {
   }
 
   // Get types
-export const getTypes = createAsyncThunk(
-    'types/getAll',
+export const getDetails = createAsyncThunk(
+    'Details/getDetails',
     async (_, thunkAPI) => {
       try {
        
         const token = thunkAPI.getState().auth.user.token
-        return await typesService.getTypes(token)
+        return await DetailService.getDetails(token)
       } catch (error) {
         const message =
           (error.response &&
@@ -29,23 +29,23 @@ export const getTypes = createAsyncThunk(
       }
     }
   )
-  export const typesSlice = createSlice({
-    name: 'types',
+  export const DetailSlice = createSlice({
+    name: 'Details',
     initialState,
     reducers: {
       reset: (state) => initialState,
     },
     extraReducers: (builder) => {
       builder
-      .addCase(getTypes.pending, (state) => {
+      .addCase(getDetails.pending, (state) => {
         state.isLoading = true
       })
-      .addCase(getTypes.fulfilled, (state, action) => {
+      .addCase(getDetails.fulfilled, (state, action) => {
         state.isLoading = false
         state.isSuccess = true
-        state.types = action.payload
+        state.Details = action.payload
       })
-      .addCase(getTypes.rejected, (state, action) => {
+      .addCase(getDetails.rejected, (state, action) => {
         state.isLoading = false
         state.isError = true
         state.message = action.payload
@@ -54,5 +54,5 @@ export const getTypes = createAsyncThunk(
     }
     })
 
-  export const { reset } = typesSlice.actions
-export default typesSlice.reducer
+  export const { reset } = DetailSlice.actions
+export default DetailSlice.reducer

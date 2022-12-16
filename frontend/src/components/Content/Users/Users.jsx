@@ -11,10 +11,10 @@ import Paper from "@mui/material/Paper";
 import { useNavigate } from "react-router-dom";
 import { useEffect } from "react";
 
-const openModal = () => {
-  console.log("r");
-  return;
-};
+// const openModal = () => {
+//   console.log("r");
+//   return;
+// };
 function Users() {
   const [toggle, setToggle] = useState(false);
   const changeState = () => {
@@ -64,7 +64,7 @@ function Users() {
           component={Paper}
           style={{ boxShadow: "0px 13px 20px 0px #80808029" }}
         >
-          <Table sx={{ minWidth: 650 }} aria-label="simple table">
+          <Table sx={{ minWidth: 650}} aria-label="simple table">
             <TableHead>
               <TableRow>
                 <TableCell>Full Name</TableCell>
@@ -74,7 +74,6 @@ function Users() {
                 <TableCell align="center">State</TableCell>
                 <TableCell align="center">Zip</TableCell>
                 <TableCell align="center">Country</TableCell>
-                <TableCell align="center">Actions</TableCell>
               </TableRow>
             </TableHead>
             <TableBody style={{ color: "white" }}>
@@ -105,16 +104,7 @@ function Users() {
                     >
                       Edit
                     </button> */}
-                    <button
-                      style={{
-                        background: "rgb(255,0,0) / 47%)",
-                        color: "red",
-                      }}
-                      type="submit"
-                      className="relative align-center rounded-xl p-3 w-16 bg-red-200"
-                    >
-                      Confirm
-                    </button>
+                  
                     
                   </TableCell>
                 </TableRow>
