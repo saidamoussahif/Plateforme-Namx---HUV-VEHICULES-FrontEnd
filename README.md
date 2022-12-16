@@ -15,3 +15,30 @@ Les principales fonctionalités de plateformes sont :
 # L'architecture de projet :
 
 ![image](https://user-images.githubusercontent.com/93975470/208064026-9f3d2a12-f30f-49ca-b4c8-6c548bc5488c.png)
+
+
+ # Technologies
+Languages we used and the libraries . 
+
+
+Tailwind css .
+React JS .
+
+
+
+
+
+# Contacts
+
+Saida Moussahif
+
+GitHub Badge LinkedIn Badge
+
+Faiza RABHI
+
+GitHub Badge LinkedIn Badge
+
+Ayoub Benouahi
+
+GitHub Badge LinkedIn Badge
+
