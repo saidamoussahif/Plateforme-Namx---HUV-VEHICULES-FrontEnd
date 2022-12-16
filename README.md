@@ -18,11 +18,12 @@ Les principales fonctionalités de plateformes sont :
 
 
  # Technologies
-Languages we used and the libraries . 
+les outils et technologies utilisées:
 
-
-Tailwind css .
-React JS .
+- Tailwind css .
+- React JS .
+- Redux .
+- Mongodb .
 
 
 
