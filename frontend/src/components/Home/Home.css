@@ -1,5 +1,14 @@
 .Background{
-    background-image: url(http://www.maghreb-rechange.com/wp-content/uploads/2022/05/namx-300x200.jpg);
+    background-image: url(https://www.automobile-propre.com/wp-content/uploads/2022/05/5D4B7729-1200x770.jpg);
     background-repeat: no-repeat;
-    background-size: 100% 300%;
+    background-size: 100% 150%;
 }
+.map-container-2 {
+    height: 500px;
+  }
+
+  @media (min-width: 992px) {
+    #cta-img-nml-50 {
+      margin-left: 50px;
+    }
+  }
