@@ -28,7 +28,7 @@ function Dashboard() {
   }
   // console.log(location)
   return (
-    <div className="AppGlass">
+    <div className="App"  class="AppGlass">
     
     <Sidebar/>
    {switche()}

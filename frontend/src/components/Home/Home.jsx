@@ -221,7 +221,6 @@ export default function Home(){
               28 Dec 2020
             </p>
             <a
-              href="/"
               aria-label="Article"
               className="inline-block mb-3 text-black transition-colors duration-200 hover:text-deep-purple-accent-700"
             >

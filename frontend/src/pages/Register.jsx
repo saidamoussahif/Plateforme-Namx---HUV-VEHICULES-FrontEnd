@@ -43,7 +43,7 @@ function Register() {
   > 
   {formik => (
     
-    <div className="flex flex-col max-w-md p-6 rounded-md sm:p-10 dark:bg-gray-900 dark:text-gray-100">
+    <div className="App w-full flex flex-col max-w-md p-6 rounded-md sm:p-10 dark:bg-gray-900 dark:text-gray-100">
 	<div className="mb-8 text-center">
   
 		<h1 className="my-3 text-4xl font-bold">Sign in</h1>
