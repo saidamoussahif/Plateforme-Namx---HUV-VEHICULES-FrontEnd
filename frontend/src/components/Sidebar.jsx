@@ -21,7 +21,7 @@ const Sidebar = () => {
   const LogOut = () => {
     dispatch(Logout());
     dispatch(reset());
-    navigate("/admin/login");
+    navigate("/Admin/login");
   };
 
 

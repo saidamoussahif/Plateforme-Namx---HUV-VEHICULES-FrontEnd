@@ -65,24 +65,25 @@ function Details() {
             <Table sx={{ minWidth: 650}} aria-label="simple table">
               <TableHead>
                 <TableRow>
-                  <TableCell>Full Name</TableCell>
-                  <TableCell align="center">Email</TableCell>
-                  <TableCell align="center">Address</TableCell>
+                  <TableCell  align="center" >Keys</TableCell>
+                  <TableCell  align="center" >Nom value</TableCell>
+                  <TableCell  align="center" >Value</TableCell>
                 </TableRow>
               </TableHead>
               <TableBody style={{ color: "white" }}>
                 {detailsList.map((detail) => (
                   <TableRow
+                  
                     sx={{ "&:last-child td, &:last-child th": { border: 0 } }}
                   >
-                    <TableCell component="th" scope="detail">
+                    <TableCell  align="center" >
                       {detail.Keys}
                     </TableCell>
-                    <TableCell component="th" scope="detail">
+                    <TableCell  align="center" >
                       {detail.Nom_Value}
                     </TableCell>
                     <TableCell align="center">{detail.Value}</TableCell>
-                    <TableCell align="center">
+                    
                       {/* <button
                         style={{
                           background: "rgb(145 254 159 / 47%)",
@@ -93,7 +94,7 @@ function Details() {
                       >
                         Edit
                       </button> */}
-       </TableCell>
+     
                   </TableRow>
                 ))}
               </TableBody>
