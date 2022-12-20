@@ -22,6 +22,289 @@ export default function Home(){
       <a class="inline-block px-7 py-3 mb-10 mr-2 bg-blue-600 text-white font-medium text-sm leading-snug uppercase rounded shadow-md hover:bg-blue-700 hover:shadow-lg focus:bg-blue-700 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-blue-800 active:shadow-lg transition duration-150 ease-in-out" data-mdb-ripple="true" data-mdb-ripple-color="light" href="#!" role="button">Get started</a>
       
     </div>
+
+    <h1 class="font-medium leading-tight text-3xl mt-10 mb-10 text-center text-blue-500">Nouvel Car</h1>
+    <div className="px-4 py-16 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:py-20">
+      <div className="grid gap-5 lg:grid-cols-3 sm:max-w-sm sm:mx-auto lg:max-w-full">
+        <div className="overflow-hidden transition-shadow duration-300 bg-white rounded">
+          <a  aria-label="Article">
+            <img
+              src="https://oss.zhaoxny.com/article/editor/image/remote/202210/202210971971.jpg"
+              className="object-cover w-full h-64 rounded"
+              alt=""
+            />
+          </a>
+          <div className="py-5">
+            <p className="mb-2 text-xs font-semibold text-gray-600 uppercase">
+              13 Jul 2021
+            </p>
+            <a
+             
+              aria-label="Article"
+              className="inline-block mb-3 text-black transition-colors duration-200 hover:text-deep-purple-accent-700"
+            >
+              <p className="text-2xl font-bold leading-5">NAMX HUV 2021</p>
+            </a>
+            <p className="mb-4 text-gray-700">
+              Sed ut perspiciatis unde omnis iste natus error sit sed quia
+              consequuntur magni voluptatem doloremque.
+            </p>
+            <div className="flex space-x-4">
+              <a
+                
+                aria-label="Likes"
+                className="flex items-start text-gray-800 transition-colors duration-200 hover:text-deep-purple-accent-700 group"
+              >
+                <div className="mr-2">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth="2"
+                    className="w-5 h-5 text-gray-600 transition-colors duration-200 group-hover:text-deep-purple-accent-700"
+                  >
+                    <polyline
+                      points="6 23 1 23 1 12 6 12"
+                      fill="none"
+                      strokeMiterlimit="10"
+                    />
+                    <path
+                      d="M6,12,9,1H9a3,3,0,0,1,3,3v6h7.5a3,3,0,0,1,2.965,3.456l-1.077,7A3,3,0,0,1,18.426,23H6Z"
+                      fill="none"
+                      stroke="currentColor"
+                      strokeMiterlimit="10"
+                    />
+                  </svg>
+                </div>
+                <p className="font-semibold">7.4K</p>
+              </a>
+              <a
+               
+                aria-label="Comments"
+                className="flex items-start text-gray-800 transition-colors duration-200 hover:text-deep-purple-accent-700 group"
+              >
+                <div className="mr-2">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth="2"
+                    stroke="currentColor"
+                    className="w-5 h-5 text-gray-600 transition-colors duration-200 group-hover:text-deep-purple-accent-700"
+                  >
+                    <polyline
+                      points="23 5 23 18 19 18 19 22 13 18 12 18"
+                      fill="none"
+                      strokeMiterlimit="10"
+                    />
+                    <polygon
+                      points="19 2 1 2 1 14 5 14 5 19 12 14 19 14 19 2"
+                      fill="none"
+                      stroke="currentColor"
+                      strokeMiterlimit="10"
+                    />
+                  </svg>
+                </div>
+                <p className="font-semibold">81</p>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div className="overflow-hidden transition-shadow duration-300 bg-white rounded">
+          <a href="/" aria-label="Article">
+            <img
+              src="https://www.meilleure-innovation.com/wp-content/uploads/2022/05/fonctionnemment-voiture-hydrogene-2.jpg"
+              className="object-cover w-full h-64 rounded"
+              alt=""
+            />
+          </a>
+          <div className="py-5">
+            <p className="mb-2 text-xs font-semibold text-gray-600 uppercase">
+              4 Nov 2021
+            </p>
+            <a
+            
+              aria-label="Article"
+              className="inline-block mb-3 text-black transition-colors duration-200 hover:text-deep-purple-accent-700"
+            >
+              <p className="text-2xl font-bold leading-5">HUV NAMX SUPER</p>
+            </a>
+            <p className="mb-4 text-gray-700">
+              Sed ut perspiciatis unde omnis iste natus error sit sed quia
+              consequuntur magni voluptatem doloremque.
+            </p>
+            <div className="flex space-x-4">
+              <a
+           
+                aria-label="Likes"
+                className="flex items-start text-gray-800 transition-colors duration-200 hover:text-deep-purple-accent-700 group"
+              >
+                <div className="mr-2">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth="2"
+                    className="w-5 h-5 text-gray-600 transition-colors duration-200 group-hover:text-deep-purple-accent-700"
+                  >
+                    <polyline
+                      points="6 23 1 23 1 12 6 12"
+                      fill="none"
+                      strokeMiterlimit="10"
+                    />
+                    <path
+                      d="M6,12,9,1H9a3,3,0,0,1,3,3v6h7.5a3,3,0,0,1,2.965,3.456l-1.077,7A3,3,0,0,1,18.426,23H6Z"
+                      fill="none"
+                      stroke="currentColor"
+                      strokeMiterlimit="10"
+                    />
+                  </svg>
+                </div>
+                <p className="font-semibold">7.4K</p>
+              </a>
+              <a
+                
+                aria-label="Comments"
+                className="flex items-start text-gray-800 transition-colors duration-200 hover:text-deep-purple-accent-700 group"
+              >
+                <div className="mr-2">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth="2"
+                    stroke="currentColor"
+                    className="w-5 h-5 text-gray-600 transition-colors duration-200 group-hover:text-deep-purple-accent-700"
+                  >
+                    <polyline
+                      points="23 5 23 18 19 18 19 22 13 18 12 18"
+                      fill="none"
+                      strokeMiterlimit="10"
+                    />
+                    <polygon
+                      points="19 2 1 2 1 14 5 14 5 19 12 14 19 14 19 2"
+                      fill="none"
+                      stroke="currentColor"
+                      strokeMiterlimit="10"
+                    />
+                  </svg>
+                </div>
+                <p className="font-semibold">81</p>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div className="overflow-hidden transition-shadow duration-300 bg-white rounded">
+          <a  aria-label="Article">
+            <img
+              src="https://cdn.motor1.com/images/mgl/RqqY1e/s3/namx-huv-il-suv-a-idrogeno-disegnato-da-pininfarina.webp"
+              className="object-cover w-full h-64 rounded"
+              alt=""
+            />
+          </a>
+          <div className="py-5">
+            <p className="mb-2 text-xs font-semibold text-gray-600 uppercase">
+              28 Dec 2020
+            </p>
+            <a
+              href="/"
+              aria-label="Article"
+              className="inline-block mb-3 text-black transition-colors duration-200 hover:text-deep-purple-accent-700"
+            >
+              <p className="text-2xl font-bold leading-5">
+                NMAX HUV MAROC
+              </p>
+            </a>
+            <p className="mb-4 text-gray-700">
+              Sed ut perspiciatis unde omnis iste natus error sit sed quia
+              consequuntur magni voluptatem doloremque.
+            </p>
+            <div className="flex space-x-4">
+              <a
+                
+                aria-label="Likes"
+                className="flex items-start text-gray-800 transition-colors duration-200 hover:text-deep-purple-accent-700 group"
+              >
+                <div className="mr-2">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth="2"
+                    className="w-5 h-5 text-gray-600 transition-colors duration-200 group-hover:text-deep-purple-accent-700"
+                  >
+                    <polyline
+                      points="6 23 1 23 1 12 6 12"
+                      fill="none"
+                      strokeMiterlimit="10"
+                    />
+                    <path
+                      d="M6,12,9,1H9a3,3,0,0,1,3,3v6h7.5a3,3,0,0,1,2.965,3.456l-1.077,7A3,3,0,0,1,18.426,23H6Z"
+                      fill="none"
+                      stroke="currentColor"
+                      strokeMiterlimit="10"
+                    />
+                  </svg>
+                </div>
+                <p className="font-semibold">7.4K</p>
+              </a>
+              <a
+                
+                aria-label="Comments"
+                className="flex items-start text-gray-800 transition-colors duration-200 hover:text-deep-purple-accent-700 group"
+              >
+                <div className="mr-2">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth="2"
+                    stroke="currentColor"
+                    className="w-5 h-5 text-gray-600 transition-colors duration-200 group-hover:text-deep-purple-accent-700"
+                  >
+                    <polyline
+                      points="23 5 23 18 19 18 19 22 13 18 12 18"
+                      fill="none"
+                      strokeMiterlimit="10"
+                    />
+                    <polygon
+                      points="19 2 1 2 1 14 5 14 5 19 12 14 19 14 19 2"
+                      fill="none"
+                      stroke="currentColor"
+                      strokeMiterlimit="10"
+                    />
+                  </svg>
+                </div>
+                <p className="font-semibold">81</p>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
     <h1 class="font-medium leading-tight text-3xl mt-10 mb-10 text-center text-blue-500">Teame</h1>
     <div class="flex flex-wrap justify-around">
         <div className='text-center'>
@@ -33,6 +316,15 @@ export default function Home(){
         <h5 class="text-xl font-medium leading-tight mb-2">Saida Moussahif</h5>
         <p class="text-gray-500">Full Stack JavaScript</p>
         </div>
+        <div className='text-center'> 
+        <img
+            src="https://avatars.githubusercontent.com/u/93930498?v=4"
+            class="rounded-full w-32 mb-4 mx-auto"
+            alt="Avatar"
+        />
+        <h5 class="text-xl font-medium leading-tight mb-2">Berkania Rasha kbir</h5>
+        <p class="text-gray-500">Full Stack JavaScript</p>
+        </div>
         <div className='text-center'>
         <img
             src="https://avatars.githubusercontent.com/u/93976857?s=400&u=b975472e27b3f92812a9973e6dae8cc0655399fd&v=4"
@@ -42,15 +334,7 @@ export default function Home(){
         <h5 class="text-xl font-medium leading-tight mb-2">Ayoub Benouahi</h5>
         <p class="text-gray-500">Full Stack JavaScript</p>
         </div>
-        <div className='text-center'> 
-        <img
-            src="https://avatars.githubusercontent.com/u/93930498?v=4"
-            class="rounded-full w-32 mb-4 mx-auto"
-            alt="Avatar"
-        />
-        <h5 class="text-xl font-medium leading-tight mb-2">Berkania Rasha kbiiiiiiiiiiiiiiiiiiir</h5>
-        <p class="text-gray-500">Full Stack JavaScript</p>
-        </div>
+       
   
  
 </div>
@@ -80,7 +364,7 @@ export default function Home(){
             <div class="mb-12 grow-0 shrink-0 basis-auto w-full md:w-6/12 lg:w-full xl:w-6/12 px-3 md:px-6 xl:px-12">
               <div class="flex items-start">
                 <div class="shrink-0">
-                  <div class="p-4 bg-blue-600 rounded-md shadow-md w-14 h-14 flex items-center justify-center">
+                  <div class="p-4 bg-indigo-500 rounded-md shadow-md w-14 h-14 flex items-center justify-center">
                     <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="headset" class="w-5 text-white"
                       role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
                       <path fill="currentColor"
@@ -99,7 +383,7 @@ export default function Home(){
             <div class="mb-12 grow-0 shrink-0 basis-auto w-full md:w-6/12 lg:w-full xl:w-6/12 px-3 md:px-6 xl:px-12">
               <div class="flex items-start">
                 <div class="shrink-0">
-                  <div class="p-4 bg-blue-600 rounded-md shadow-md w-14 h-14 flex items-center justify-center">
+                  <div class="p-4 bg-indigo-500 rounded-md shadow-md w-14 h-14 flex items-center justify-center">
                     <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="dollar-sign"
                       class="w-3 text-white" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 288 512">
                       <path fill="currentColor"
@@ -118,7 +402,7 @@ export default function Home(){
             <div class="mb-12 grow-0 shrink-0 basis-auto w-full md:w-6/12 lg:w-full xl:w-6/12 px-3 md:px-6 xl:px-12">
               <div class="flex align-start">
                 <div class="shrink-0">
-                  <div class="p-4 bg-blue-600 rounded-md shadow-md w-14 h-14 flex items-center justify-center">
+                  <div class="p-4 bg-indigo-500 rounded-md shadow-md w-14 h-14 flex items-center justify-center">
                     <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="newspaper"
                       class="w-5 text-white" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512">
                       <path fill="currentColor"
@@ -137,7 +421,7 @@ export default function Home(){
             <div class="mb-12 lg:mb-0 grow-0 shrink-0 basis-auto w-full md:w-6/12 lg:w-full xl:w-6/12 px-3 md:px-6 xl:px-12">
               <div class="flex align-start">
                 <div class="shrink-0">
-                  <div class="p-4 bg-blue-600 rounded-md shadow-md w-14 h-14 flex items-center justify-center">
+                  <div class="p-4 bg-indigo-500 rounded-md shadow-md w-14 h-14 flex items-center justify-center">
                     <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="bug" class="w-5 text-white"
                       role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
                       <path fill="currentColor"
