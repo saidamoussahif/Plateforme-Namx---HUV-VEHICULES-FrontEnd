@@ -29,8 +29,8 @@ async function LoginUser(event) {
 
 }
   return (
-    <div
-      className="flex flex-col max-w-md p-6 rounded-md sm:p-10 dark:bg-white dark:text-gray-100"
+    <div 
+      className="App w-full flex flex-col p-6 rounded-md sm:p-10  dark:text-gray-100"
       style={{ backgroundColor: "black" }}
     >
       <div className="mb-8 text-center">

@@ -54,7 +54,7 @@ function Users() {
 
  
   return (
-    <div>
+    <div >
       <label htmlFor="my-modal-3" className="btn" onClick={changeState}>
         Add
       </label>
