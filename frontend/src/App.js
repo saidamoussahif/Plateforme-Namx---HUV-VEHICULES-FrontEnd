@@ -1,5 +1,5 @@
 import "./App.css";
-// import "./index.css";
+
 import { Routes, Route } from "react-router-dom";
 import Dashboard from "./pages/admin/Dashboard";
 import Cars from "./components/Content/Cars/Cars";
@@ -12,7 +12,10 @@ import Admin from "./pages/admin/Login.jsx";
 import Register from "./pages/Register";
 import Home from "./components/Home/Home";
 import Reservation from "./components/reservation/order";
+import Presentation from "./components/Presentation/Presentation";
+
 import Car from "./components/Car/Car";
+
 
 
 
@@ -40,10 +43,9 @@ function App() {
         <Route path="/Home"  element={<Home/>}/>
         <Route path="/order"  element={<Reservation/>}/>
         <Route path="/Car"  element={<Car />}/>
-     
+     <Route path="/Nmax" element={<Presentation/>}/>
         
       </Routes>
-    
     
     
     </>

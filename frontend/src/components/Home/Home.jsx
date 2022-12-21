@@ -23,9 +23,9 @@ export default function Home(){
       
     </div>
 
-    <h1 class="font-medium leading-tight text-3xl mt-10 mb-10 text-center text-blue-500">Nouvel Car</h1>
+    <h1 id="Car" class="font-medium leading-tight text-3xl mt-10 mb-10 text-center text-blue-500">Nouvel Car</h1>
     <div className="px-4 py-16 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:py-20">
-      <div className="grid gap-5 lg:grid-cols-3 sm:max-w-sm sm:mx-auto lg:max-w-full">
+      <div  className="grid gap-5 lg:grid-cols-3 sm:max-w-sm sm:mx-auto lg:max-w-full">
         <div className="overflow-hidden transition-shadow duration-300 bg-white rounded">
           <a  aria-label="Article">
             <img
@@ -304,7 +304,7 @@ export default function Home(){
     </div>
 
 
-    <h1 class="font-medium leading-tight text-3xl mt-10 mb-10 text-center text-blue-500">Teame</h1>
+    <h1 id="Team" class="font-medium leading-tight text-3xl mt-10 mb-10 text-center text-blue-500">Teame</h1>
     <div class="flex flex-wrap justify-around">
         <div className='text-center'>
         <img
