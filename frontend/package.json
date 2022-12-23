@@ -1,5 +1,4 @@
-
-  { 
+{
   "name": "dashboard",
   "version": "0.1.0",
   "proxy": "http://localhost:8000",
@@ -9,9 +8,9 @@
     "@emotion/styled": "^11.8.1",
     "@iconscout/react-unicons": "^1.1.6",
     "@mui/material": "^5.6.0",
+    "@react-three/drei": "^9.47.1",
+    "@react-three/fiber": "^8.9.1",
     "@reduxjs/toolkit": "^1.9.1",
-    "@react-three/drei": "^9.34.3",
-    "@react-three/fiber": "^8.8.10",
     "@testing-library/jest-dom": "^5.14.1",
     "@testing-library/react": "^12.0.0",
     "@testing-library/user-event": "^13.2.1",

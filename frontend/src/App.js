@@ -12,7 +12,7 @@ import Admin from "./pages/admin/Login.jsx";
 import Register from "./pages/Register";
 import Home from "./components/Home/Home";
 import Reservation from "./components/reservation/order";
-import Presentation from "./components/Presentation/Presentation";
+
 
 import Car from "./components/Car/Car";
 
@@ -41,9 +41,9 @@ function App() {
         {/* <Route path="verifyUser/:activationCode"  element={<ActivationPage/>}/> */}
         <Route path="*" element={<ErrorNotFound/>} />
         <Route path="/Home"  element={<Home/>}/>
-        <Route path="/order"  element={<Reservation/>}/>
+        <Route path="/order/:_id"  element={<Reservation/>}/>
         <Route path="/Car"  element={<Car />}/>
-     <Route path="/Nmax" element={<Presentation/>}/>
+    
         
       </Routes>
     

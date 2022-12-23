@@ -19,6 +19,8 @@
   "bugs": {
     "url": "https://github.com/saidamoussahif/Plateforme-Namx---HUV-VEHICULES-FrontEnd/issues"
   },
-  "homepage": "https://github.com/saidamoussahif/Plateforme-Namx---HUV-VEHICULES-FrontEnd#readme"
-  
+  "homepage": "https://github.com/saidamoussahif/Plateforme-Namx---HUV-VEHICULES-FrontEnd#readme",
+  "dependencies": {
+    "react-hook-form": "^7.41.0"
+  }
 }
