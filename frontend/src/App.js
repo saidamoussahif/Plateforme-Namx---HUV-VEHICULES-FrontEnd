@@ -13,16 +13,13 @@ import Register from "./pages/Register";
 import Home from "./components/Home/Home";
 import Reservation from "./components/reservation/order";
 import Car from "./components/Car/Car";
+// import Presentation from "./components/presentation/Presentation"
 
 
 
 function App() {
   return (
     <>
-    
-    
-    
-    
       <Routes>
      
         <Route  path='/dashboard' element={<Dashboard/>}>
@@ -37,15 +34,13 @@ function App() {
         <Route className="App" path="register"  element={<Register/>}/>
         {/* <Route path="verifyUser/:activationCode"  element={<ActivationPage/>}/> */}
         <Route path="*" element={<ErrorNotFound/>} />
-        <Route path="/Home"  element={<Home/>}/>
+        <Route path="/"  element={<Home/>}/>
         <Route path="/order"  element={<Reservation/>}/>
         <Route path="/Car"  element={<Car />}/>
+        {/* <Route path="/Presentation"  element={<Presentation />}/> */}
      
         
       </Routes>
-    
-    
-    
     </>
   );
 }
